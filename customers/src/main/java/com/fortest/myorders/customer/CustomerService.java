@@ -1,4 +1,4 @@
-package org.iiad;
+package com.fortest.myorders.customer;
 
 
 import lombok.AllArgsConstructor;

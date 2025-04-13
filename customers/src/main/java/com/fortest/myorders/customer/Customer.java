@@ -1,4 +1,4 @@
-package org.iiad;
+package com.fortest.myorders.customer;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,7 +17,8 @@ import javax.persistence.GenerationType;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Customer {
-  @Id
+
+    @Id
     @SequenceGenerator(
             name = "customer_id_sequence",
             sequenceName = "customer_id_sequence"
