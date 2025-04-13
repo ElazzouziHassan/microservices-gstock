@@ -1,4 +1,4 @@
-package org.iiad;
+package com.fortest.myorders.product;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -42,5 +42,4 @@ public record ProductController(ProductService productService) {
         productService.deleteProduct(id);
         return ResponseEntity.noContent().build();
     }
-
 }

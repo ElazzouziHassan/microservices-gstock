@@ -1,4 +1,4 @@
-package org.iiad;
+package com.fortest.myorders.product;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

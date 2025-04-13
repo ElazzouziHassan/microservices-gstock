@@ -1,4 +1,5 @@
-package org.iiad;
+package com.fortest.myorders.product;
+
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -19,8 +20,6 @@ public class ProductService {
                 .build();
 
         return productRepository.saveAndFlush(customer);
-
-
     }
 
     public List<Product> getAllProducts(){
