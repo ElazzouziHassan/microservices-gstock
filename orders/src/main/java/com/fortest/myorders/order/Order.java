@@ -1,5 +1,4 @@
-package org.iiad;
-
+package com.fortest.myorders.order;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
@@ -34,7 +33,4 @@ public class Order {
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<OrderItem> orderItems;
-
-
 }
-

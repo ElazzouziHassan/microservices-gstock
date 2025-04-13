@@ -1,4 +1,4 @@
-package org.iiad;
+package com.fortest.myorders.order;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -48,4 +48,3 @@ public class OrderController {
         }
     }
 }
-

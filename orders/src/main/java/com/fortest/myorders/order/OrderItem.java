@@ -1,4 +1,4 @@
-package org.iiad;
+package com.fortest.myorders.order;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
@@ -34,5 +34,4 @@ public class OrderItem {
     private Integer productId;
 
     private Double quantity;
-
 }
