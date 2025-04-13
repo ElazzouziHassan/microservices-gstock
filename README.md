@@ -13,7 +13,6 @@ A microservices-based application built with Spring Boot, consisting of three se
 - [API Endpoints](#api-endpoints)
 - [Database Schema](#database-schema)
 - [Service Communication](#service-communication)
-- [Future Improvements](#future-improvements)
 
 ## Overview
 
