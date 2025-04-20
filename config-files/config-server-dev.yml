@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:ElazzouziHassan/microservices-gstock.git
+          clone-on-start: true
+          default-label: master
+  security:
+    user:
+      password: admin
+      name: admin

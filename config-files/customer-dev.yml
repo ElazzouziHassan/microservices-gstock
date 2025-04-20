@@ -1,0 +1,42 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: customer
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/customer_db
+    password: pass1234
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  boot:
+    admin:
+      client:
+        url : http://localhost:8088
+  cloud:
+    config:
+      uri: http://localhost:8888
+      enabled: true
+      profile: dev
+  config:
+    import: optional:configserver:http://localhost:8888
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
