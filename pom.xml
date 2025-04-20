@@ -21,6 +21,7 @@
         <module>products</module>
         <module>orders</module>
         <module>eureka-server</module>
+        <module>discovery</module>
     </modules>
 
     <properties>
